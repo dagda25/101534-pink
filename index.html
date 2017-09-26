@@ -5,8 +5,136 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Приложение «Пинк»">
+      </a>
+      <nav class="main-nav">
+        <span class="visually-hidden">Главное меню</span>
+        <button class="main-nav__toggle" type="button"></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <div class="page-main__inner">
+        <h1 class="visually-hidden">Приложение хорошего настроения «Пинк»</h1>
+        <section class="apps">
+          <h2 class="visually-hidden">Мобильные приложения</h2>
+          <a class="apps__button button" href="#">Скачать приложение</a>
+          <ul class="apps__list">
+            <li class="apps__item">
+              <a class="apps__link apps__link--ios" href="#">
+                <img class="apps__image apps__image--ios" src="http://placehold.it/50x50" width="50" height="50" alt="Приложение «Пинк» на ios">
+              </a>
+            </li>
+            <li class="apps__item">
+              <a class="apps__link apps__link--android" href="#">
+                <img class="apps__image apps__image--android" src="http://placehold.it/50x50" width="50" height="50" alt="Приложение «Пинк» на android">
+              </a>
+            </li>
+            <li class="apps__item">
+              <a class="apps__link apps__link--windows" href="#">
+                <img class="apps__image apps__image--windows" src="http://placehold.it/50x50" width="50" height="50" alt="Приложение «Пинк» на windows mobile">
+              </a>
+            </li>
+          </ul>
+          <p class="apps__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </section>
+        <section class="advantages">
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <p class="advantages__slogan">Устали от серости мегаполиса?</p>
+          <p class="advantages__slogan">Нам есть, что вам предложить!</p>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <img class="advantages__image" src="http://placehold.it/150x150" width="150" height="150" alt="Всеи привет!">
+        </section>
+        <section class="review">
+          <div class="review__wrapper slider">
+            <h2 class="visually-hidden">Отзывы</h2>
+            <ul class="review__list slider__list">
+              <li class="review__item slider__item slider__item--active">
+                <p class="review__author">Николай Петров</p>
+                <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </li>
+              <li class="review__item slider__item">
+                <p class="review__author"></p>
+                <p class="review__text"></p>
+              </li>
+              <li class="review__item slider__item">
+                <p class="review__author"></p>
+                <p class="review__text"></p>
+              </li>
+            </ul>
+            <p class="review__toggles slider__toggles">
+              <button class="slider__toggle slider__toggle--active" type="button">1</button>
+              <button class="slider__toggle" type="button">2</button>
+              <button class="slider__toggle" type="button">3</button>
+            </p>
+          </div>
+        </section>
+        <section class="tariffs">
+          <div class="tariffs__wrapper slider">
+            <h2 class="visually-hidden">Тарифы</h2>
+            <ul class="tariffs__list slider__list">
+              <li class="slider__item">
+              </li>
+              <li class="slider__item slider__item--active">
+                <header class="tariffs__header">
+                  <h3 class="tariffs__title tariffs__title--hit">Стандарт</h3>
+                  <p class="tariffs__price">3,99 USD</p>
+                </header>
+                <p class="tariffs__feature tariffs__feature--on">Розовый фильтр</p>
+                <p class="tariffs__feature tariffs__feature--on">Смайлики</p>
+                <p class="tariffs__feature tariffs__feature--off">Комментарии</p>
+              </li>
+              <li class="slider__item">
+              </li>
+            </ul>
+            <p class="tariffs__toggles slider__toggles">
+              <button class="slider__toggle" type="button">1</button>
+              <button class="slider__toggle slider__toggle--active" type="button">2</button>
+              <button class="slider__toggle" type="button">3</button>
+            </p>
+          </div>
+        </section>
+        <section class="contact">
+          <h2 class="visually-hidden">Остались вопросы? Свяжитесь с нами!</h2>
+          <p class="contact__title">Звоните:</p>
+          <a class="contact__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          <p class="contact__title">Пишите:</p>
+          <a class="contact__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <p class="contact__title">Приезжайте в гости:</p>
+          <p class="contact__address">ул. Большая Конюшенная, 19/8</p>
+          <div class="contact__map"></div>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
