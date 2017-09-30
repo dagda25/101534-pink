@@ -3,93 +3,99 @@
   <head>
     <meta charset="UTF-8">
     <title>Пинк: фотографии пользователей</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="http://placehold.it/150x100" width="150" height="100" alt="Приложение «Пинк»">
-      </a>
-      <nav class="main-nav">
-        <span class="visually-hidden">Главное меню</span>
-        <button class="main-nav__toggle" type="button"></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a>Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__inner">
+        <a class="page-header__logo" href="index.html">
+          <img src="img/logo-pink-white-mobile.svg" width="74.426" height="22.859" alt="Приложение «Пинк»">
+        </a>
+        <nav class="main-nav">
+          <span class="visually-hidden">Главное меню</span>
+          <button class="main-nav__toggle" type="button">
+            <img class="main-nav__burger" src="img/icon-menu-burger.svg" width="49.945" height="24.007">
+            <img class="main-nav__cross" src="img/icon-menu-cross.svg" width="23.867" height="23.867">
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a>Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <div class="page-main__inner">
         <section class="page-main__slogan slogan">
-          <h1 class="slogan__title">фотографии пользователей</h1>
+          <h1 class="slogan__title">Фотографии пользователей</h1>
         </section>
         <section class="page-main__photo photo">
-          <h2 class="photo__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+          <h2 class="photo__slogan">Взгляните на фотографии, которые выкладывают пользователи! <br>Видите, как не хватает ваших?</h2>
           <ul class="photo__list">
             <li class="photo__item photo__item--best">
-              <img class="photo__image" src="http://placehold.it/350x200" width="350" height="200" alt="">
-              <p class="photo__author">Анна<span class="photo__date">(5 минут назад)</span></p>
-              <p class="photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <p class="photo__like">Нравится: 215</p>
+              <img class="photo__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="">
+              <p class="photo__author photo__author--best">Анна<span class="photo__date"> (5 минут назад)</span></p>
+              <p class="photo__text photo__text--best">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <p class="photo__like photo__like--best">Нравится: 215</p>
             </li>
             <li class="photo__item ">
-              <img class="photo__image" src="http://placehold.it/350x200" width="350" height="200" alt="">
-              <p class="photo__author">Левон<span class="photo__date">(5 часов назад)</span></p>
+              <img class="photo__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="">
+              <p class="photo__author">Левон<span class="photo__date"> (5 часов назад)</span></p>
               <p class="photo__text">Вчера он на луну летал, сегодня в руки к нас попал</p>
               <p class="photo__like">Нравится: 356</p>
             </li>
             <li class="photo__item ">
-              <img class="photo__image" src="http://placehold.it/350x200" width="350" height="200" alt="">
-              <p class="photo__author">Антон<span class="photo__date">(12 часов назад)</span></p>
+              <img class="photo__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="">
+              <p class="photo__author">Антон<span class="photo__date"> (12 часов назад)</span></p>
               <p class="photo__text">Соседи будут рады!</p>
               <p class="photo__like">Нравится: 666</p>
             </li>
             <li class="photo__item ">
-              <img class="photo__image" src="http://placehold.it/350x200" width="350" height="200" alt="">
-              <p class="photo__author">Борис<span class="photo__date">(20 часов назад)</span></p>
+              <img class="photo__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="">
+              <p class="photo__author">Борис<span class="photo__date"> (20 часов назад)</span></p>
               <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном</p>
               <p class="photo__like">Нравится: 215</p>
             </li>
             <li class="photo__item ">
-              <img class="photo__image" src="http://placehold.it/350x200" width="350" height="200" alt="">
-              <p class="photo__author">Сергей<span class="photo__date">(25 часов назад)</span></p>
+              <img class="photo__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="">
+              <p class="photo__author">Сергей<span class="photo__date"> (25 часов назад)</span></p>
               <p class="photo__text">Самая кубанская в мире!</p>
               <p class="photo__like">Нравится: 4</p>
             </li>
             <li class="photo__item ">
-              <img class="photo__image" src="http://placehold.it/350x200" width="350" height="200" alt="">
-              <p class="photo__author">Максим<span class="photo__date">(40 часов назад)</span></p>
+              <img class="photo__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="">
+              <p class="photo__author">Максим<span class="photo__date"> (40 часов назад)</span></p>
               <p class="photo__text">Где снег-то?</p>
               <p class="photo__like">Нравится: 150</p>
             </li>
             <li class="photo__item ">
-              <img class="photo__image" src="http://placehold.it/350x200" width="350" height="200" alt="">
-              <p class="photo__author">Надежда<span class="photo__date">(45 часов назад)</span></p>
+              <img class="photo__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="">
+              <p class="photo__author">Надежда<span class="photo__date"> (45 часов назад)</span></p>
               <p class="photo__text">Всем GM и взаимные лайки!</p>
               <p class="photo__like">Нравится: 2560</p>
             </li>
           </ul>
-          <p class="photo__after">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <p class="photo__after">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
         </section>
         <section class="page-main__publish publish">
           <h2 class="visually-hidden">Опубликовать фото</h2>
-          <img class="publish__image" src="http://placehold.it/350x500" width="350" height="500" alt="Запостить фото">
+          <img class="publish__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Запостить фото">
           <ul class="publish__tools">
-            <li class="publish__tool publish__tool--active"><img class="publish__cut" src="http://placehold.it/50x50" width="50" height="50" alt="Обрезать фото"></li>
-            <li class="publish__tool"><img class="publish__color" src="http://placehold.it/50x50" width="50" height="50" alt="Изменить цвет"></li>
-            <li class="publish__tool"><img class="publish__contrast" src="http://placehold.it/50x50" width="50" height="50" alt="Изменить контраст"></li>
+            <li class="publish__tool publish__tool--active"><img class="publish__cut" src="img/icon-editor-crop.svg" width="48" height="48" alt="Обрезать фото"></li>
+            <li class="publish__tool"><img class="publish__color" src="img/icon-editor-fill.svg" width="48" height="48" alt="Изменить цвет"></li>
+            <li class="publish__tool"><img class="publish__contrast" src="img/icon-editor-contrast.svg" width="48" height="48" alt="Изменить контраст"></li>
           </ul>
           <div class="publish__change"></div>
           <div class="publish__buttons">
@@ -100,29 +106,37 @@
       </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__inner">
         <a class="page-footer__logo" href="index.html">
-          <img class="page-footer__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Приложение «Пинк»">
+          <img src="img/logo-pink-blue-mobile.svg" width="146.3" height="40.375" alt="Приложение «Пинк»">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <span class="visually-hidden">Мы в твиттере</span>
-              <a class="social__link social__link--twitter" href="twitter.com"></a>
+              <a class="social__link social__link--twitter" href="twitter.com">
+                <img src="img/icon-twitter.svg" width="17.5" height="14.663" alt="Twitter">
+              </a>
             </li>
             <li class="social__item">
               <span class="visually-hidden">Мы в фейсбуке</span>
-              <a class="social__link social__link--facebook" href="fb.com"></a>
+              <a class="social__link social__link--facebook" href="fb.com">
+                <img src="img/icon-facebook.svg" width="8.673" height="18.944" alt="Facebook">
+              </a>
             </li>
             <li class="social__item">
               <span class="visually-hidden">Мы на ютубе</span>
-              <a class="social__link social__link--youtube" href="youtube.com"></a>
+              <a class="social__link social__link--youtube" href="youtube.com">
+                <img src="img/icon-youtube.svg" width="14.64" height="13.96" alt="Facebook">
+              </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/htmlacademy.svg" width="40" height="40" alt="htmlacademy">
+          </a>
         </div>
       </div>
     </footer>

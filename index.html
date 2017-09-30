@@ -3,32 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="http://placehold.it/150x100" width="150" height="100" alt="Приложение «Пинк»">
-      </a>
-      <nav class="main-nav">
-        <span class="visually-hidden">Главное меню</span>
-        <button class="main-nav__toggle" type="button"></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__inner">
+        <a class="page-header__logo">
+          <img src="img/logo-pink-white-mobile.svg" width="74.426" height="22.859" alt="Приложение «Пинк»">
+        </a>
+        <nav class="main-nav">
+          <span class="visually-hidden">Главное меню</span>
+          <button class="main-nav__toggle" type="button">
+            <img class="main-nav__burger" src="img/icon-menu-burger.svg" width="49.945" height="24.007">
+            <img class="main-nav__cross" src="img/icon-menu-cross.svg" width="23.867" height="23.867">
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a>Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <div class="page-main__inner">
@@ -39,17 +45,17 @@
           <ul class="apps__list">
             <li class="apps__item">
               <a class="apps__link apps__link--ios" href="#">
-                <img class="apps__image apps__image--ios" src="http://placehold.it/50x50" width="50" height="50" alt="Приложение «Пинк» на ios">
+                <img class="apps__image apps__image--ios" src="img/logo-apple.svg" width="46.21" height="56.753" alt="Приложение «Пинк» на ios">
               </a>
             </li>
             <li class="apps__item">
               <a class="apps__link apps__link--android" href="#">
-                <img class="apps__image apps__image--android" src="http://placehold.it/50x50" width="50" height="50" alt="Приложение «Пинк» на android">
+                <img class="apps__image apps__image--android" src="img/logo-android.svg" width="42.084" height="47.041" alt="Приложение «Пинк» на android">
               </a>
             </li>
             <li class="apps__item">
               <a class="apps__link apps__link--windows" href="#">
-                <img class="apps__image apps__image--windows" src="http://placehold.it/50x50" width="50" height="50" alt="Приложение «Пинк» на windows mobile">
+                <img class="apps__image apps__image--windows" src="img/logo-microsoft.svg" width="43.922" height="41.992" alt="Приложение «Пинк» на windows mobile">
               </a>
             </li>
           </ul>
@@ -73,7 +79,7 @@
               <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <img class="advantages__image" src="http://placehold.it/150x150" width="150" height="150" alt="Всеи привет!">
+          <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всеи привет!">
         </section>
         <section class="review">
           <div class="review__wrapper slider">
@@ -125,13 +131,19 @@
           </div>
         </section>
         <section class="contact">
-          <h2 class="visually-hidden">Остались вопросы? Свяжитесь с нами!</h2>
-          <p class="contact__title">Звоните:</p>
-          <a class="contact__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
-          <p class="contact__title">Пишите:</p>
-          <a class="contact__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          <p class="contact__title">Приезжайте в гости:</p>
-          <p class="contact__address">ул. Большая Конюшенная, 19/8</p>
+          <h2 class="contact__title">Остались вопросы? Свяжитесь с нами!</h2>
+          <div class="contact__block">
+            <p class="contact__text">Звоните:</p>
+            <a class="contact__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </div>
+          <div class="contact__block">
+            <p class="contact__text">Пишите:</p>
+            <a class="contact__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contact__block">
+            <p class="contact__text">Приезжайте в гости:</p>
+            <p class="contact__address">ул. Большая Конюшенная, 19/8</p>
+          </div>
           <div class="contact__map"></div>
         </section>
       </div>
