@@ -7,29 +7,34 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="http://placehold.it/150x100" width="150" height="100" alt="Приложение «Пинк»">
-      </a>
-      <nav class="main-nav">
-        <span class="visually-hidden">Главное меню</span>
-        <button class="main-nav__toggle" type="button"></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a>Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__inner">
+        <a class="page-header__logo" href="index.html">
+          <img src="img/logo-pink-white-mobile.svg" width="74.426" height="22.859" alt="Приложение «Пинк»">
+        </a>
+        <nav class="main-nav">
+          <span class="visually-hidden">Главное меню</span>
+          <button class="main-nav__toggle" type="button">
+            <img class="main-nav__burger" src="img/icon-menu-burger.svg" width="49.945" height="24.007">
+            <img class="main-nav__cross" src="img/icon-menu-cross.svg" width="23.867" height="23.867">
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a>Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <div class="page-main__inner">
@@ -48,17 +53,17 @@
             <fieldset class="forms__checkbox-area">
               <legend class="forms__checkbox-legend">Ваши безбашенные достижения в путешествии</legend>
               <input class="forms__checkbox" type="checkbox" name="action" value="action1" id="action1" checked>
-              <label for="action1">Сделал селфи с акулой</label>
+              <label class="forms__checkbox-label" for="action1">Сделал селфи с акулой</label>
               <input class="forms__checkbox" type="checkbox" name="action" value="action2" id="action2" checked>
-              <label for="action2">Обгорел на пляже</label>
+              <label class="forms__checkbox-label" for="action2">Обгорел на пляже</label>
               <input class="forms__checkbox" type="checkbox" name="action" value="action3" id="action3" >
-              <label for="action3">Видел Чака Норриса</label>
+              <label class="forms__checkbox-label" for="action3">Видел Чака Норриса</label>
               <input class="forms__checkbox" type="checkbox" name="action" value="action4" id="action4">
-              <label for="action4">Накупил сувениров</label>
+              <label class="forms__checkbox-label" for="action4">Накупил сувениров</label>
               <input class="forms__checkbox" type="checkbox" name="action" value="action5" id="action5" checked>
-              <label for="action5">Удержал башню</label>
+              <label class="forms__checkbox-label" for="action5">Удержал башню</label>
               <input class="forms__checkbox" type="checkbox" name="action" value="action6" id="action6" >
-              <label for="action6">Разгромил отель</label>
+              <label class="forms__checkbox-label" for="action6">Разгромил отель</label>
             </fieldset>
             <label class="forms__label label" for="phone">Номер телефона</label>
             <input class="forms__input input-text" type="text" name="phone" value="" id="phone" placeholder="Номер, пожалуйста">
@@ -67,44 +72,52 @@
             <fieldset class="forms__radio-area">
               <legend class="forms__radio-legend">С каким приложением путешествовали?</legend>
               <input class="forms__radio" type="radio" name="os" value="os1" id="os1" checked>
-              <label class="forms__label label" for="os1">Pink для iOS</label>
+              <label class="forms__radio-label" for="os1">Pink для iOS</label>
               <input class="forms__radio" type="radio" name="os" value="os2" id="os2">
-              <label class="forms__label label" for="os2">Pink на Android</label>
+              <label class="forms__radio-label" for="os2">Pink на Android</label>
               <input class="forms__radio" type="radio" name="os" value="os3" id="os3" >
-              <label class="forms__label label" for="os3">Windows Phone</label>
+              <label class="forms__radio-label" for="os3">Windows Phone</label>
             </fieldset>
             <label class="forms__label label" for="description">Опишите свои эмоции</label>
-            <textarea class="forms__textarea" id="description" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            <button class="forms__button">Отпрваить форму</button>
+            <textarea class="forms__textarea" id="description" cols="30" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <button class="forms__button">Отправить форму</button>
             <p class="forms__text"><span class="forms__text--important">*</span>- Обязательные поля</p>
           </form>
         </section>
       </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__inner">
         <a class="page-footer__logo" href="index.html">
-          <img class="page-footer__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Приложение «Пинк»">
+          <img src="img/logo-pink-blue-mobile.svg" width="146.3" height="40.375" alt="Приложение «Пинк»">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <span class="visually-hidden">Мы в твиттере</span>
-              <a class="social__link social__link--twitter" href="twitter.com"></a>
+              <a class="social__link social__link--twitter" href="twitter.com">
+                <img src="img/icon-twitter.svg" width="17.5" height="14.663" alt="Twitter">
+              </a>
             </li>
             <li class="social__item">
               <span class="visually-hidden">Мы в фейсбуке</span>
-              <a class="social__link social__link--facebook" href="fb.com"></a>
+              <a class="social__link social__link--facebook" href="fb.com">
+                <img src="img/icon-facebook.svg" width="8.673" height="18.944" alt="Facebook">
+              </a>
             </li>
             <li class="social__item">
               <span class="visually-hidden">Мы на ютубе</span>
-              <a class="social__link social__link--youtube" href="youtube.com"></a>
+              <a class="social__link social__link--youtube" href="youtube.com">
+                <img src="img/icon-youtube.svg" width="14.64" height="13.96" alt="Facebook">
+              </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/htmlacademy.svg" width="40" height="40" alt="htmlacademy">
+          </a>
         </div>
       </div>
     </footer>
