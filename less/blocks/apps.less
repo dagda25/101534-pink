@@ -1,4 +1,6 @@
-.apps {
+.apps__promo {
+  width: 320px;
+  height: 400px;
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat 50% 0, url("../img/bg-back-mobile@1x.jpg");
   background-color: #283645;
 }
@@ -21,4 +23,27 @@
   font-size: 14px;
   line-height: 24px;
   color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .apps {
+    position: relative;
+  }
+
+  .apps__button,
+  .apps__list,
+  .apps_text {
+    position: absolute;
+    top: 150px;
+  }
+
+  .apps__promo {
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .apps__promo {
+    width: @desktop-width;
+  }
 }

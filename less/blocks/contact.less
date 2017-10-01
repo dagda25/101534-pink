@@ -30,3 +30,29 @@
   height: 200px;
   background: url("../img/bg-map-mobile@1x.png") no-repeat;
 }
+
+@media (min-width: @tablet-width) {
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contact__title {
+    width: 100%;
+  }
+
+  .contact__block {
+    width: 50%;
+  }
+
+  .contact__map {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact__block {
+    width: 30%;
+  }
+}

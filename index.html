@@ -41,6 +41,7 @@
         <h1 class="visually-hidden">Приложение хорошего настроения «Пинк»</h1>
         <section class="apps">
           <h2 class="visually-hidden">Мобильные приложения</h2>
+          <div class="apps__promo"></div>
           <a class="apps__button button" href="#">Скачать приложение</a>
           <ul class="apps__list">
             <li class="apps__item">
@@ -65,21 +66,23 @@
           <h2 class="visually-hidden">Наши преимущества</h2>
           <p class="advantages__slogan">Устали от серости мегаполиса?</p>
           <p class="advantages__slogan">Нам есть, что вам предложить!</p>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <h3 class="advantages__title">Поднимает настроение</h3>
-              <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Меняет мир вокруг</h3>
-              <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Заводит новых друзей</h3>
-              <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
-          <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всеи привет!">
+          <div class="advantages__inner">
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <h3 class="advantages__title">Поднимает настроение</h3>
+                <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__title">Меняет мир вокруг</h3>
+                <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__title">Заводит новых друзей</h3>
+                <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+            <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всеи привет!">
+          </div>
         </section>
         <section class="review">
           <div class="review__wrapper slider">
@@ -110,19 +113,38 @@
             <h2 class="visually-hidden">Тарифы</h2>
             <ul class="tariffs__list slider__list">
               <li class="slider__item">
+                <header class="tariffs__header">
+                  <h3 class="tariffs__title tariffs__title--hit">База</h3>
+                  <p class="tariffs__price">1,99 USD</p>
+                </header>
+                <div class="tariffs__feature tariffs__feature--on"></div>
+                <div class="tariffs__feature tariffs__feature--off"></div>
+                <div class="tariffs__feature tariffs__feature--off"></div>
               </li>
               <li class="slider__item slider__item--active">
                 <header class="tariffs__header">
                   <h3 class="tariffs__title tariffs__title--hit">Стандарт</h3>
                   <p class="tariffs__price">3,99 USD</p>
                 </header>
-                <p class="tariffs__feature tariffs__feature--on">Розовый фильтр</p>
-                <p class="tariffs__feature tariffs__feature--on">Смайлики</p>
-                <p class="tariffs__feature tariffs__feature--off">Комментарии</p>
+                <div class="tariffs__feature tariffs__feature--on"></div>
+                <div class="tariffs__feature tariffs__feature--on"></div>
+                <div class="tariffs__feature tariffs__feature--off"></div>
               </li>
               <li class="slider__item">
+                <header class="tariffs__header">
+                  <h3 class="tariffs__title tariffs__title--hit">Премиум</h3>
+                  <p class="tariffs__price">9,99 USD</p>
+                </header>
+                <div class="tariffs__feature tariffs__feature--on"></div>
+                <div class="tariffs__feature tariffs__feature--on"></div>
+                <div class="tariffs__feature tariffs__feature--on"></div>
               </li>
             </ul>
+            <div class="tariffs__labels">
+              <p class="tariffs__label">Розовый фильтр</p>
+              <p class="tariffs__label">Смайлики</p>
+              <p class="tariffs__label">Комментарии</p>
+            </div>
             <p class="tariffs__toggles slider__toggles">
               <button class="slider__toggle" type="button">1</button>
               <button class="slider__toggle slider__toggle--active" type="button">2</button>

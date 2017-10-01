@@ -5,5 +5,23 @@
 }
 
 .page-header__inner {
+  display: flex;
+  justify-content: space-between;
   margin: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: @desktop-width;
+  }
+
+  .page-header__inner {
+  margin: 0 130px;
+  }
 }
