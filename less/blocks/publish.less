@@ -45,3 +45,35 @@
   border-color: rgba(40, 54, 69, 0.1);
   background: transparent;
 }
+
+@media (min-width: @tablet-width) {
+  .publish {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 515px;
+  }
+
+  .publish__image {
+    width: 50%;
+  }
+
+  .publish__tools {
+    flex-direction: column;
+  }
+
+  .publish__submit,
+  .publish__cancel {
+    display: block;
+    width: 255px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .publish__submit,
+  .publish__cancel {
+    display: inline-block;
+    width: 183px;
+    margin-bottom: 0;
+  }
+}
