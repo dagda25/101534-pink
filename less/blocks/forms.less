@@ -22,7 +22,8 @@
   border: none;
 }
 
-.forms__checkbox-legend {
+.forms__checkbox-legend,
+.forms__contact-legend {
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
@@ -108,4 +109,122 @@
 
 .forms__text--important {
   color: #d22856;
+}
+
+.forms__contact,
+.forms__lastname,
+.forms__firstname,
+.forms__secondname,
+.forms__description {
+  border: none;
+}
+
+.forms__contact-legend {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .forms__name {
+    display: flex;
+    flex-wrap: wrap;
+    order: 1;
+    width: 100%;
+  }
+
+  .forms__lastname,
+  .forms__firstname,
+  .forms__secondname {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .forms__radio-area {
+    order: 2;
+    width: 100%;
+    margin: 0;
+  }
+
+  .forms__contact {
+    order: 3;
+    width: 100%;
+  }
+
+  .forms__contact-legend {
+    display: block;
+  }
+
+  .forms__checkbox-area {
+    order: 4;
+    width: 100%;
+    margin: 0;
+  }
+
+  .forms__checkbox-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .forms__description {
+    order: 5;
+    width: 100%;
+  }
+
+  .forms__phone,
+  .forms__email {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .forms__button-area {
+    display: flex;
+    justify-content: space-between;
+    order: 6;
+    width: 100%;
+    margin: 0 20px;
+  }
+
+  .forms__button {
+    width: 300px;
+  }
+
+  .forms__text {
+    margin: 0;
+  }
+
+  .forms__input {
+    width: 100%;
+  }
+
+  .forms__label {
+    width: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .forms__name {
+    width: 50%;
+  }
+
+  .forms__radio-area {
+    width: 50%;
+  }
+
+  .forms__phone,
+  .forms__email {
+    width: 50%;
+  }
+
+  .forms__contact-wrapper {
+    display: flex;
+  }
+
+  .forms__checkbox-wrapper {
+    flex-wrap: wrap;
+    height: 230px;
+  }
+
+  .forms__checkbox-label {
+    margin-top: 30px;
+  }
 }

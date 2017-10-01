@@ -11,3 +11,20 @@
   align-items: center;
   margin: 40px 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: @tablet-width;
+  }
+
+  .page-footer__inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: @desktop-width;
+  }
+}
