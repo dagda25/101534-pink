@@ -2,21 +2,24 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Пинк: фотографии пользователей</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__inner">
-        <a class="page-header__logo" href="index.html">
-          <img src="img/logo-pink-white-mobile.svg" width="74.426" height="22.859" alt="Приложение «Пинк»">
-        </a>
-        <nav class="main-nav">
+        <div class="page-header__top">
+          <a class="page-header__logo" href="index.html">
+            <img src="img/logo-pink-white-mobile.svg" width="74.426" height="22.859" alt="Приложение «Пинк»">
+          </a>
           <span class="visually-hidden">Главное меню</span>
           <button class="main-nav__toggle" type="button">
             <img class="main-nav__burger" src="img/icon-menu-burger.svg" width="49.945" height="24.007">
             <img class="main-nav__cross" src="img/icon-menu-cross.svg" width="23.867" height="23.867">
           </button>
+        </div>
+        <nav class="main-nav">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active">
@@ -92,15 +95,30 @@
         <section class="page-main__publish publish">
           <h2 class="visually-hidden">Опубликовать фото</h2>
           <img class="publish__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Запостить фото">
-          <ul class="publish__tools">
-            <li class="publish__tool publish__tool--active"><img class="publish__cut" src="img/icon-editor-crop.svg" width="48" height="48" alt="Обрезать фото"></li>
-            <li class="publish__tool"><img class="publish__color" src="img/icon-editor-fill.svg" width="48" height="48" alt="Изменить цвет"></li>
-            <li class="publish__tool"><img class="publish__contrast" src="img/icon-editor-contrast.svg" width="48" height="48" alt="Изменить контраст"></li>
-          </ul>
-          <div class="publish__change"></div>
-          <div class="publish__buttons">
-            <button class="publish__submit button" type="submit">Запостить</button>
-            <button class="publish__cancel button" type="reset">Отмена</button>
+          <div class="publish__inner">
+            <ul class="publish__tools">
+              <li class="publish__tool publish__tool--active"><img class="publish__cut" src="img/icon-editor-crop.svg" width="48" height="48" alt="Обрезать фото"></li>
+              <li class="publish__tool"><img class="publish__color" src="img/icon-editor-fill.svg" width="48" height="48" alt="Изменить цвет"></li>
+              <li class="publish__tool"><img class="publish__contrast" src="img/icon-editor-contrast.svg" width="48" height="48" alt="Изменить контраст"></li>
+            </ul>
+            <ul class="publish__change-list">
+              <li class="publish__change publish__change--active">
+                <div class="publish__change-line"></div>
+                <div class="publish__change-circle publish__change-circle--first"></div>
+              </li>
+              <li class="publish__change">
+                <div class="publish__change-line"></div>
+                <div class="publish__change-circle publish__change-circle--second"></div>
+              </li>
+              <li class="publish__change">
+                <div class="publish__change-line"></div>
+                <div class="publish__change-circle publish__change-circle--third"></div>
+              </li>
+            </ul>
+            <div class="publish__buttons">
+              <button class="publish__submit button" type="submit">Запостить</button>
+              <button class="publish__cancel button" type="reset">Отмена</button>
+            </div>
           </div>
         </section>
       </div>
