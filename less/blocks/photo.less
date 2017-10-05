@@ -98,3 +98,29 @@
   line-height: 30px;
   color: @main;
 }
+
+@media (min-width: @tablet-width) {
+  .photo__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .photo__item {
+    width: 50%;
+  }
+
+  .photo__item--best {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo__item {
+    width: 30%;
+  }
+
+  .photo__item--best {
+    width: 100%;
+  }
+}

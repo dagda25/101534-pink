@@ -5,5 +5,35 @@
 }
 
 .page-header__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0 20px;
+}
+
+.page-header__top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: @desktop-width;
+  }
+
+  .page-header__inner {
+    flex-wrap: nowrap;
+    margin: 0 130px;
+  }
+
+  .page-header__top {
+    width: auto;
+  }
 }

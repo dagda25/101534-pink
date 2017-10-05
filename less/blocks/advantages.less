@@ -33,3 +33,29 @@
   line-height: 24px;
   color: @main;
 }
+
+@media (min-width: @tablet-width) {
+  .advantages__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .advantages__list {
+    justify-content: space-between;
+    order: 2;
+  }
+
+  .advantages__image {
+    order: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__list {
+    flex-direction: row;
+  }
+
+  .advantages__inner {
+    flex-direction: column;
+  }
+}
