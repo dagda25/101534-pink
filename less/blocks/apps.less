@@ -1,12 +1,20 @@
+.apps {
+  background-color: @main;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+}
+
 .apps__promo {
   width: 320px;
-  height: 400px;
-  background: url("../img/iphone-hand-mobile@1x.png") no-repeat 50% 0, url("../img/bg-back-mobile@1x.jpg");
+  height: 396px;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat 0% 100%, url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 100%;
   background-color: #283645;
 }
 
 .apps__button {
   display: inline-block;
+  margin: 28px 20px 32px;
+  padding-top: 15px;
   vertical-align: middle;
   text-align: center;
   height: 55px;
@@ -14,15 +22,31 @@
   border: 3px solid white;
 }
 
+.apps__button:hover, .apps__button:focus {
+  color: #d22856;
+  background-color: #ffffff;
+}
+
+.apps__button:active {
+  color: rgba(210, 40, 86, 0.3);
+}
+
 .apps__list {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0 57px;
+  padding: 0;
 }
 
 .apps__text {
+  margin: 18px 30px 16px;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   color: #ffffff;
+  text-align: center;
 }
 
 @media (min-width: @tablet-width) {

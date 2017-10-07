@@ -1,4 +1,9 @@
+.advantages {
+margin-bottom: 20px;
+}
+
 .advantages__slogan {
+  margin-bottom: 0;
   text-align: center;
   font-weight: 300;
   font-size: 24px;
@@ -6,19 +11,48 @@
   color: @main;
 }
 
+.advantages__inner {
+  position: relative;
+  padding-top: 120px;
+  background-color: #f2f2f2;
+}
+
+.advantages__inner::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 100%;
+  height: 80px;
+  background: url("../img/bg-triangle-white.svg") 50% 50%;
+  background-color: #f2f2f2;
+}
+
+.advantages__inner::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: -20px;
+  z-index: 3;
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+}
+
 .advantages__list {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0 20px;
   padding: 0;
   text-align: center;
   list-style: none;
-  background-color: #f2f2f2;
 }
 
 .advantages__title {
   margin: 0;
   padding: 0;
+  padding-bottom: 10px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -28,10 +62,19 @@
 .advantages__text {
   margin: 0;
   padding: 0;
+  padding-bottom: 30px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: @main;
+}
+
+.advantages__image {
+  position: relative;
+  z-index: 2;
+  top: 20px;
+  display: block;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {

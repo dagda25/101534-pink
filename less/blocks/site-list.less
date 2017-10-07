@@ -5,6 +5,10 @@
   list-style: none;
 }
 
+.site-list__item:first-child {
+  border-top: 1px solid black;
+}
+
 .site-list__item {
   text-align: center;
   background-color: rgb(40, 54, 69);
@@ -12,6 +16,23 @@
   font-size: 18px;
   line-height: 32px;
   color: #ffffff;
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.15), inset 0px -1px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.site-list__item a {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.site-list__item a:link {
+  color: #ffffff;
+}
+
+.site-list__item a[href]:hover,
+.site-list__item a[href]:focus {
+  color: #d22856;
 }
 
 @media (min-width: @desktop-width) {
@@ -22,3 +43,6 @@
     width: 790px;
   }
 }
+
+
+

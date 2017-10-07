@@ -6,6 +6,29 @@
   display: block;
 }
 
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.slider__toggle {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  margin-right: 10px;
+  background-color: #bec2c7;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+}
+
+.slider__toggle--active {
+  background-color: #ffffff;
+  border: 3px solid @main;
+}
+
 @media (min-width: @tablet-width) {
   .slider__item {
     display: block;
