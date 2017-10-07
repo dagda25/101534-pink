@@ -170,11 +170,26 @@
   background-color: #bec2c7;
   border: 3px solid #f2f2f2;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.tariffs__toggle:hover,
+.tariffs__toggle:focus {
+  background-color: rgb(142, 149, 157);
+}
+
+.tariffs__toggle:active {
+  background-color: rgb(236, 237, 238);
 }
 
 .tariffs__toggle--active {
   background-color: #f2f2f2;
   border: 3px solid @main;
+}
+
+.tariffs__toggle--active:hover,
+.tariffs__toggle--active:focus{
+  background-color: #ffffff;
 }
 
 @media (min-width: @tablet-width) {
@@ -190,3 +205,10 @@
     display: flex;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .tariffs__wrapper {
+    width: @desktop-width;
+  }
+}
+

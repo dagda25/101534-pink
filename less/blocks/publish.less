@@ -1,6 +1,11 @@
 .publish {
+  position: relative;
   padding: 20px 20px 40px 20px;
   background-color: #f2f2f2;
+}
+
+.publish__image {
+  margin-bottom: 36px;
 }
 
 .publish__tools {
@@ -11,6 +16,23 @@
   margin-left: 50px;
   margin-right: 50px;
   list-style: none;
+}
+
+.publish__tool {
+  position: relative;
+}
+
+.publish__tool:first-child {
+  left: -16px;
+}
+
+.publish__tool:nth-child(2) {
+  left: -8px;
+}
+
+.publish__tool:last-child {
+  left: 5px;
+  top: 7px;
 }
 
 .publish__change {
@@ -33,8 +55,8 @@
 .publish__change-line {
   position: absolute;
   z-index: 1;
-  top: -20px;
-  left: -20px;
+  top: -5px;
+  left: -22px;
   width: 241px;
   height: 2px;
   background-color: @main;
@@ -43,25 +65,25 @@
 .publish__change-circle {
   position: absolute;
   z-index: 2;
-  top: -27px;
-  left: 180px;
+  top: -12px;
+  left: 170px;
   width: 15px;
   height: 15px;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   border: 2px solid #d22856;
   border-radius: 50%;
   margin: 0 auto;
 }
 
 .publish__buttons {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .publish__submit {
   display: inline-block;
   height: 55px;
   width: 280px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   text-align: center;
   vertical-align: middle;
   font-weight: 700;
@@ -84,6 +106,17 @@
   color: rgba(40, 54, 69, 0.1);
   border-color: rgba(40, 54, 69, 0.1);
   background: transparent;
+}
+
+.publish::after {
+  position: absolute;
+  top: 555px;
+  left: 0px;
+  display: block;
+  content: " ";
+  height: 1px;
+  width: 320px;
+  background-color: rgb(221, 223, 224);
 }
 
 @media (min-width: @tablet-width) {
