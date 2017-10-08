@@ -13,8 +13,7 @@
   cursor: pointer;
 }
 
-.main-nav__toggle:hover path,
-.main-nav__toggle:focus path {
+.main-nav__toggle:hover path {
   fill: #d22856;
 }
 
@@ -22,8 +21,32 @@
   fill: rgba(210, 40, 86, 0.3);
 }
 
-.main-nav__burger {
-  display: none;
+@media (max-width: 1199px) {
+  .main-nav--opened .site-list__item {
+    display: block;
+  }
+
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav__burger--on,
+  .main-nav__cross--on {
+    display: block;
+  }
+
+  .main-nav__burger--off,
+  .main-nav__cross--off {
+    display: none;
+  }
+
+  .main-nav--nojs ~ .page-header__top .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
 }
 
 @media (min-width: @desktop-width) {
