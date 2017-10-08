@@ -4,3 +4,31 @@
   padding: 0;
   list-style: none;
 }
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border: 3px solid rgb(235, 237, 238);
+  border-radius: 50%;
+}
+
+.social__item:nth-child(2) {
+margin-left: 10px;
+margin-right: 10px;
+}
+
+.social__item:hover,
+.social__item:focus {
+  border: 3px solid @main;
+}
+
+.social__item:active {
+  border: 3px solid rgba(235, 237, 238, 0.5);
+}
+
+.social__item:active path {
+  fill: rgb(245, 202, 214);
+}
