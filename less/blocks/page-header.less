@@ -19,9 +19,30 @@
   padding-bottom: 18px;
 }
 
+.page-header__logo svg {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .page-header {
     width: @tablet-width;
+  }
+
+  .page-header__top {
+    padding-top: 28px;
+    padding-bottom: 41px;
+  }
+
+  .page-header__logo svg {
+    display: block;
+  }
+
+  .page-header__logo img {
+    display: none;
+  }
+
+  .page-header__logo[href]:hover path {
+    fill: #d22856;
   }
 }
 
