@@ -140,7 +140,6 @@
   width: 320px;
   height: 2px;
   background-color: rgb(238, 238, 238);
-
 }
 
 .tariffs__feature--on {
@@ -198,11 +197,128 @@
   }
 
   .tariffs__item {
-    width: 25%;
+    position: relative;
+    width: 155px;
+  }
+
+  .tariffs__item::after {
+    display: none;
+  }
+
+  .tariffs__item::before {
+    z-index: 1;
+    top: 0;
+    left: -3px;
+    height: 230px;
   }
 
   .tariffs__list {
+    position: relative;
     display: flex;
+    margin-right: 20px;
+    padding-top: 110px;
+    background-color: #f2f2f2;
+  }
+
+  .tariffs__list::before {
+    position: absolute;
+    letter-spacing: 200px;
+    top: 193px;
+    content: " ";
+    width: 620px;
+    height: 135px;
+    background-color: #ffffff;
+  }
+
+  .tariffs__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .tariffs__price {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .tariffs__header {
+    width: 155px;
+    height: 80px;
+    min-height: 80px;
+  }
+
+  .tariffs__header--hit {
+    background: url("../img/bg-hit.svg") no-repeat 0% 0%;
+    background-size: 38%;
+    background-color: @main;
+  }
+
+  .tariffs__header--hit::before {
+    top: 5px;
+    left: 5px;
+  }
+
+  .tariffs__wrapper::before {
+    height: 100px;
+  }
+
+  .tariffs__labels {
+    top: 185px;
+    left: 37px;
+    text-transform: none;
+  }
+
+  .tariffs__labels::before {
+    position: absolute;
+    z-index: 5;
+    top: 10px;
+    left: -20px;
+    display: block;
+    content: " ";
+    width: 2px;
+    height: 140px;
+    background-color: rgb(238, 238, 238);
+  }
+
+  .tariffs__label {
+    padding-bottom: 0px;
+  }
+
+  .tariffs__feature {
+    width: 32px;
+    height: 45px;
+    margin-left: 60px;
+  }
+
+  .tariffs__feature::after {
+    position: relative;
+    top: 0px;
+    right: 220px;
+    display: block;
+    content: " ";
+    width: 320px;
+    height: 2px;
+    background-color: rgb(238, 238, 238);
+  }
+
+  .tariffs__feature::before {
+    position: relative;
+    top: 47px;
+    right: 220px;
+    display: block;
+    content: " ";
+    width: 320px;
+    height: 2px;
+    background-color: rgb(238, 238, 238);
+  }
+
+  .tariffs__toggles {
+    height: 70px;
+  }
+
+  .tariffs__toggle {
+    display: none;
   }
 }
 
