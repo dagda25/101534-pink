@@ -323,8 +323,97 @@
 }
 
 @media (min-width: @desktop-width) {
+  .tariffs {
+    margin-bottom: 85px;
+  }
+
   .tariffs__wrapper {
     width: @desktop-width;
+    padding-bottom: 25px;
+  }
+
+  .tariffs__list {
+    margin-right: 0;
+    margin: 0 130px;
+    padding-top: 155px;
+  }
+
+  .tariffs__item {
+    width: 236px;
+  }
+
+  .tariffs__header {
+    width: 236px;
+    height: 100px;
+    min-height: 80px;
+  }
+
+  .tariffs__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .tariffs__price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .tariffs__header--hit {
+    background: url("../img/bg-hit.svg") no-repeat 0% 0%;
+    background-size: 32%;
+    background-color: @main;
+  }
+
+  .tariffs__header--hit::before {
+    top: 12px;
+    left: 12px;
+  }
+
+  .tariffs__labels {
+    top: 235px;
+    left: 155px;
+  }
+
+  .tariffs__labels::before {
+    top: 15px;
+    left: -25px;
+    height: 182px;
+  }
+
+  .tariffs__label {
+    font-size: 18px;
+    padding-top: 32px;
+  }
+
+  .tariffs__feature {
+    width: 30px;
+    height: 60px;
+    margin-left: 105px;
+  }
+
+  .tariffs__feature::before {
+    width: 472px;
+    right: 340px;
+    top: 57px;
+  }
+
+  .tariffs__feature::after {
+    width: 472px;
+    right: 340px;
+    top: -4px;
+  }
+
+  .tariffs__list::before {
+    top: 255px;
+    content: " ";
+    width: 940px;
+    height: 180px;
+  }
+
+  .tariffs__item::before {
+    height: 280px;
   }
 }
 
