@@ -163,42 +163,118 @@
   }
 
   .publish__image {
-    width: 40%;
+    width: 300px;
+    height: 400px;
+    margin-top: 37px;
   }
 
   .publish__inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 60%;
+    width: 300px;
   }
 
   .publish__tools {
     flex-direction: column;
     margin: 0;
+    margin-top: 45px;
+    margin-left: 15px;
     padding: 0;
+  }
+
+  .publish__cut,
+  .publish__color {
+    width: 24px;
+    height: 24px;
+  }
+
+  .publish__tool:first-child {
+    left: 0px;
+  }
+
+  .publish__tool:nth-child(2) {
+    left: 0px;
+    margin-top: 48px;
+  }
+
+  .publish__tool:last-child {
+    left: 5px;
+    top: 0px;
+    margin-top: 47px;
+  }
+
+  .publish__path {
+    fill: #d22856 ;
+  }
+
+  .publish__contrast {
+    width: 15px;
+    height: 15px;
+  }
+
+  .publish__change-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 50px;
   }
 
   .publish__change {
     display: block;
+    width: 200px;
+    margin-bottom: 0;
+  }
+
+  .publish__change:nth-child(2) {
+    position: relative;
+    top: 23px;
+  }
+
+  .publish__change:nth-child(3) {
+    position: relative;
+    top: 38px;
+  }
+
+  .publish__change-line {
+    width: 200px;
   }
 
   .publish__change-circle--first {
-    left: 60px;
+    left: 120px;
   }
 
   .publish__change-circle--second {
-    left: 210px;
+    left: 0px;
   }
 
   .publish__change-circle--third {
-    left: 140px;
+    left: 70px;
+  }
+
+  .publish__buttons {
+    margin-top: 92px;
+    margin-left: 30px;
+  }
+
+  .publish__submit {
+    margin-bottom: 22px;
   }
 
   .publish__submit,
   .publish__cancel {
     display: block;
-    width: 255px;
+    width: 260px;
+  }
+
+  .publish::after {
+    display: none;
+  }
+
+  .publish {
+    margin-bottom: -30px;
   }
 }
 
