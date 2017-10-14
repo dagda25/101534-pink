@@ -1,12 +1,16 @@
 .slogan {
-  height: 171px;
+  position: relative;
+  z-index: 0;
+  top: -66px;
+  height: 237px;
+  margin-bottom: -66px;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 25%;
   background-color: @main;
 }
 
 .slogan__title {
   margin: 0 20px;
-  padding-top: 30px;
+  padding-top: 96px;
   text-align: center;
   font-weight: 300;
   font-size: 24px;
@@ -16,12 +20,14 @@
 
 @media (min-width: @tablet-width) {
   .slogan {
-    height: 330px;
+    top: -111px;
+    height: 441px;
+    margin-bottom: -111px;
   }
 
   .slogan__title {
     margin: 0 20px;
-    padding-top: 70px;
+    padding-top: 181px;
     text-align: center;
     font-weight: 300;
     font-size: 50px;
