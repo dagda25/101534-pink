@@ -279,10 +279,92 @@
 }
 
 @media (min-width: @desktop-width) {
+  .publish {
+    margin: 0 130px 70px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .publish__buttons {
+    display: flex;
+    width: 410px;
+    margin-top: 162px;
+    margin-left: 64px;
+  }
+
   .publish__submit,
   .publish__cancel {
     display: inline-block;
     width: 183px;
     margin-bottom: 0;
+    font-size: 18px;
+  }
+
+  .publish__cancel {
+    position: relative;
+    left: 45px;
+  }
+
+  .publish__tools {
+    margin-top: 31px;
+    margin-left: -45px;
+  }
+
+  .publish__tool:nth-child(2) {
+    margin-top: 25px;
+  }
+
+  .publish__tool:last-child {
+    margin-top: 25px;
+  }
+
+  .publish__cut,
+  .publish__color {
+    width: 48px;
+    height: 48px;
+  }
+
+  .publish__contrast {
+    width: 32px;
+    height: 32px;
+  }
+
+  .publish__change:nth-child(2) {
+    top: 17px;
+  }
+
+  .publish__change-list {
+    padding-left: 56px;
+  }
+
+  .publish__change:nth-child(3) {
+    top: 30px;
+  }
+
+  .publish__change-line {
+    width: 290px;
+  }
+
+  .publish__change-circle--first {
+    left: 50px;
+  }
+
+  .publish__change-circle--second {
+    left: 225px;
+  }
+
+  .publish__change-circle--third {
+    left: 140px;
+  }
+
+  .publish__change::after {
+    position: relative;
+    top: 30px;
+    left: -115px;
+    display: block;
+    content: " ";
+    width: 410px;
+    height: 1px;
+    background-color: rgb(226, 226, 226);
   }
 }
