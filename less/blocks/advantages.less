@@ -81,6 +81,11 @@
   margin: 0 auto;
 }
 
+.advantages__image-second,
+.advantages__image-third {
+  display: none;
+}
+
 .advantages__research {
   display: none;
 }
@@ -121,7 +126,9 @@
   }
 
   .advantages__image {
-    top: -80px;
+    top: -30px;
+    left: 20px;
+    z-index: 6;
     order: 1;
     width: 267px;
     height: 485px;
@@ -170,17 +177,36 @@
   .advantages__research::before {
     content: " ";
     position: absolute;
-    top: 0;
-    display: inline-block;
-    background: url("");
-    height: 290px;
-    width: 240px;
+    left: 20px;
+    top: 30px;
+    width: 245px;
+    height: 280px;
+    background: url("../img/icon-timer.svg") no-repeat;
+    background-size: contain;
+  }
+
+  .advantages__research::after {
+    content: "24";
+    position: absolute;
+    left: 41px;
+    top: 89px;
+    width: 200px;
+    height: 200px;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 150px;
+    text-align: center;
+    vertical-align: middle;
+    color: #d22856;
+    border: 14px solid #d22856;
+    border-radius: 50%
   }
 }
 
 @media (min-width: @desktop-width) {
   .advantages {
-    padding-top: 20px;
+    padding-top: 25px;
+    margin-bottom: 10px;
   }
 
   .advantages__list {
@@ -188,7 +214,7 @@
     justify-content: space-between;
     width: 890px;
     height: auto;
-    margin: -20px auto 0;
+    margin: -12px auto 0;
     padding-top: 0;
   }
 
@@ -198,7 +224,27 @@
 
   .advantages__image {
     z-index: 10;
-    height: 300px;
+    left: 324px;
+    top: -70px;
+    height: 302px;
+    width: 292px;
+  }
+
+  .advantages__image-second,
+  .advantages__image-third {
+    position: absolute;
+    z-index: 5;
+    display: block;
+  }
+
+  .advantages__image-second {
+    top: -25px;
+    left: 134px;
+  }
+
+  .advantages__image-third {
+    top: -25px;
+    left: 457px;
   }
 
   .advantages__slogan {
@@ -213,7 +259,7 @@
 
   .advantages__inner::before {
     height: 90px;
-    top: -40px;
+    top: -20px;
   }
 
   .advantages__inner::after {
@@ -221,7 +267,7 @@
   }
 
   .advantages__title {
-    padding-bottom: 20px;
+    padding-bottom: 24px;
     font-size: 30px;
     line-height: 30px;
     font-weight: 700;
@@ -248,7 +294,7 @@
   .advantages__research-slogan {
     width: auto;
     padding-left: 165px;
-    padding-top: 130px;
+    padding-top: 120px;
     padding-bottom: 10px;
   }
 
@@ -271,6 +317,26 @@
   }
 
   .advantages__research::before {
+    content: " ";
+    left: 130px;
+    top: 27px;
     width: 330px;
+    height: 350px;
+    background: url("../img/icon-timer.svg") no-repeat;
+  }
+
+  .advantages__research::after {
+    left: 152px;
+    top: 95px;
+    width: 257px;
+    height: 257px;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 186px;
+    text-align: center;
+    vertical-align: middle;
+    color: #d22856;
+    border: 20px solid #d22856;
+    border-radius: 50%
   }
 }
