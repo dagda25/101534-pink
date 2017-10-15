@@ -16,17 +16,21 @@
   margin: 40px 20px;
 }
 
-.page-footer__logo:hover .page-footer__logo-hover,
-.page-footer__logo:focus .page-footer__logo-hover {
+.page-footer__logo[href]:hover .page-footer__logo-hover,
+.page-footer__logo[href]:focus .page-footer__logo-hover {
   fill: #d22856;
 }
 
-.page-footer__logo:active .page-footer__logo-hover {
+.page-footer__logo[href]:active .page-footer__logo-hover {
   fill: rgb(212, 214, 218);
 }
 
-.page-footer__logo:active .page-footer__logo-active {
+.page-footer__logo[href]:active .page-footer__logo-active {
   fill: rgb(245, 202, 214);
+}
+
+.page-footer__logo-desktop {
+  display: none;
 }
 
 .page-footer__social {
@@ -68,6 +72,14 @@
 @media (min-width: @desktop-width) {
   .page-footer {
     width: @desktop-width;
+  }
+
+  .page-footer__logo-tablet {
+    display: none;
+  }
+
+  .page-footer__logo-desktop {
+    display: block;
   }
 
   .page-footer__inner {
