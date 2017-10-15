@@ -27,7 +27,6 @@
 
 .forms__checkbox-area {
   display: flex;
-  margin: 0;
   padding: 0;
   padding-top: 70px;
   margin: -20px -20px 28px;
@@ -75,7 +74,7 @@
   border: 2px solid rgb(238, 238, 238);
 }
 
-.forms__checkbox-label::after{
+.forms__checkbox-label::after {
   position: absolute;
   display: none;
   left: 28px;
@@ -299,10 +298,12 @@
   }
 
   .forms__input {
+    width: 100%;
     margin-bottom: 47px;
   }
 
   .forms__label {
+    width: auto;
     margin-left: 0;
     padding-right: 20px;
     padding-left: 0;
@@ -348,6 +349,7 @@
   }
 
   .forms__contact-legend {
+    display: block;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -368,6 +370,8 @@
   .forms__phone,
   .forms__email {
     position: relative;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .forms__phone::before {
@@ -392,10 +396,6 @@
     height: 62px;
     background-color: rgb(229, 229, 229);
     border-radius: 2px;
-  }
-
-  .forms__contact-legend {
-    display: block;
   }
 
   .forms__checkbox-area {
@@ -461,18 +461,12 @@
     margin-top: 45px;
   }
 
-  .forms__phone,
-  .forms__email {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
   .forms__button-area {
     display: flex;
     justify-content: space-between;
     order: 6;
     width: 100%;
-    margin: 0px;
+    margin: 0;
     margin-bottom: -15px;
   }
 
@@ -484,14 +478,6 @@
     margin: 0;
     padding: 0;
     margin-top: 18px;
-  }
-
-  .forms__input {
-    width: 100%;
-  }
-
-  .forms__label {
-    width: auto;
   }
 }
 
@@ -542,7 +528,7 @@
 
   .forms__phone,
   .forms__email {
-    width: 50%;
+    width: 375px;
   }
 
   .forms__contact {
@@ -556,11 +542,6 @@
   .forms__contact-wrapper {
     display: flex;
     justify-content: space-between;
-  }
-
-  .forms__phone,
-  .forms__email {
-    width: 375px;
   }
 
   .forms__checkbox-area {
