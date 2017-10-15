@@ -1,12 +1,27 @@
+.apps {
+  position: relative;
+  top: -66px;
+  z-index: 0;
+  background-color: @main;
+  padding-bottom: 15px;
+  margin-bottom: -49px;
+}
+
 .apps__promo {
   width: 320px;
-  height: 400px;
-  background: url("../img/iphone-hand-mobile@1x.png") no-repeat 50% 0, url("../img/bg-back-mobile@1x.jpg");
+  height: 462px;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat 0% 100%, url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 100%;
   background-color: #283645;
+}
+
+.apps__slogan {
+  display: none;
 }
 
 .apps__button {
   display: inline-block;
+  margin: 28px 20px 32px;
+  padding-top: 15px;
   vertical-align: middle;
   text-align: center;
   height: 55px;
@@ -14,36 +29,121 @@
   border: 3px solid white;
 }
 
+.apps__button:hover,
+.apps__button:focus {
+  color: #d22856;
+  background-color: #ffffff;
+}
+
+.apps__button:active {
+  color: rgba(210, 40, 86, 0.3);
+}
+
 .apps__list {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0 57px;
+  padding: 0;
 }
 
 .apps__text {
+  margin: 18px 30px 16px;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   color: #ffffff;
+  text-align: center;
 }
 
 @media (min-width: @tablet-width) {
   .apps {
     position: relative;
+    top: -111px;
+    margin-bottom: -70px;
+    padding-bottom: 123px;
+  }
+
+  .apps__slogan {
+    position: absolute;
+    top: 205px;
+    display: block;
+    width: 230px;
+    margin: 0;
+    padding: 0;
+    padding-top: 0;
+    margin-left: 55px;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 46px;
+    color: #ffffff;
+    text-align: center;
   }
 
   .apps__button,
   .apps__list,
-  .apps_text {
+  .apps__text {
     position: absolute;
-    top: 150px;
+  }
+
+  .apps__button {
+    top: 245px;
+    width: 300px;
+    margin-top: 131px;
+  }
+
+  .apps__list {
+    top: 370px;
+    left: 10px;
+    width: 205px;
+    margin-top: 111px;
+  }
+
+  .apps__text {
+    top: 552px;
+    left: -10px;
+    width: 300px;
+    font-size: 18px;
   }
 
   .apps__promo {
     width: @tablet-width;
+    height: 605px;
+    background: url("../img/iphone-hand-mobile@1x.png") no-repeat 50% 100%, url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 100%;
   }
 }
 
 @media (min-width: @desktop-width) {
   .apps__promo {
     width: @desktop-width;
+    height: 740px;
+  }
+
+  .apps__slogan {
+    top: 220px;
+    margin-left: 161px;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .apps__button {
+    top: 320px;
+    width: 300px;
+    margin-top: 131px;
+    margin-left: 130px;
+    font-weight: 700;
+    font-size: 21px;
+  }
+
+  .apps__list {
+    top: 465px;
+    left: 120px;
+  }
+
+  .apps__text {
+    top: 665px;
+    left: 100px;
   }
 }

@@ -1,4 +1,6 @@
 .photo__slogan {
+  padding-top: 30px;
+  padding-bottom: 40px;
   text-align: center;
   font-weight: 400;
   font-size: 14px;
@@ -10,6 +12,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.photo__item {
+  margin-bottom: 30px;
 }
 
 .photo__item--best {
@@ -30,7 +36,12 @@
   }
 }
 
+.photo__image {
+  margin-bottom: 15px;
+}
+
 .photo__author {
+  margin: 0;
   padding-left: 20px;
   text-align: left;
   font-weight: 700;
@@ -53,6 +64,8 @@
 }
 
 .photo__text {
+  margin: 0;
+  margin-bottom: 10px;
   padding: 0 20px;
   text-align: left;
   font-weight: 400;
@@ -67,7 +80,9 @@
 
 .photo__like {
   position: relative;
+  margin: 0;
   margin-left: 50px;
+  margin-bottom: 39px;
   text-align: left;
   text-transform: uppercase;
   font-weight: 400;
@@ -92,6 +107,8 @@
 }
 
 .photo__after {
+  margin-top: 60px;
+  margin-bottom: 45px;
   text-align: center;
   font-weight: 400;
   font-size: 14px;
@@ -107,20 +124,196 @@
   }
 
   .photo__item {
-    width: 50%;
+    position: relative;
+    width: 300px;
+  }
+
+  .photo__image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .photo__author {
+    position: relative;
+    z-index: 1;
+    margin-top: 8px;
+    margin-left: 8px;
+  }
+
+  .photo__text {
+    position: relative;
+    z-index: 1;
+    margin-left: 8px;
+    min-height: 48px;
+  }
+
+  .photo__like {
+    z-index: 3;
+    margin-bottom: 12px;
+    margin-left: 28px;
+    margin-top: auto;
+  }
+
+  .photo__like::before {
+    left: 227px;
+  }
+
+  .photo__item::after {
+    position: absolute;
+    z-index: 0;
+    top: 300px;
+    left: 0;
+    content: " ";
+    width: 300px;
+    height: 157px;
+    background-color: rgb(242, 242, 242);
   }
 
   .photo__item--best {
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 660px;
+    margin-bottom: 50px;
+  }
+
+  .photo__item--best::after {
+    position: absolute;
+    z-index: 0;
+    top: 510px;
+    left: 20px;
+    content: " ";
+    width: 620px;
+    height: 120px;
+    background-color: rgb(242, 242, 242);
+  }
+
+  .photo__like--best {
+    z-index: 1;
+    order: 3;
+    margin-bottom: 0;
+    padding-right: 80px;
+    margin-left: 0;
+  }
+
+  .photo__like--best::before {
+    z-index: 1;
+    left: 108px;
+  }
+
+  .photo__text--best {
+    z-index: 1;
+    order: 4;
+    margin-left: 8px;
+    margin-bottom: 22px;
+  }
+
+  .photo__author--best {
+    z-index: 1;
+    padding-left: 28px;
+    margin-top: 0;
+    margin-left: 20px;
+  }
+
+  .photo__item--best::before {
+    top: 57px;
+    right: 20px;
+  }
+
+  .photo__item--best .photo__image {
+    width: 660px;
+    height: 510px;
+    margin-bottom: 23px;
+  }
+
+  .photo__slogan {
+    width: 550px;
+    margin: 0 auto;
+    padding-top: 92px;
+    padding-bottom: 75px;
+    font-size: 18px;
+  }
+
+  .photo__slogan br {
+    display: none;
+  }
+
+  .photo__after {
+    margin-top: 47px;
+    margin-bottom: 68px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .photo__list {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
   .photo__item {
-    width: 30%;
+    width: 300px;
+    margin-bottom: 63px;
+  }
+
+  .photo__item .photo__image {
+    height: 400px;
+  }
+
+  .photo__item::after {
+    top: 398px;
   }
 
   .photo__item--best {
-    width: 100%;
+    width: 1200px;
+    margin: 0 -130px 28px;
+  }
+
+  .photo__slogan {
+    width: 620px;
+    padding-bottom: 87px;
+  }
+
+  .photo__item--best .photo__image {
+    width: 1200px;
+    height: 506px;
+  }
+
+  .photo__item--best::before {
+    top: 54px;
+    right: 130px;
+  }
+
+  .photo__item--best::after {
+    width: 940px;
+    height: 95px;
+    left: 130px;
+    top: 507px;
+  }
+
+  .photo__like--best {
+    z-index: 1;
+    order: 3;
+    margin-bottom: 0;
+    padding-right: 193px;
+    margin-left: 0;
+  }
+
+  .photo__like--best::before {
+    z-index: 1;
+    left: 108px;
+  }
+
+  .photo__text--best {
+    margin-left: 118px;
+  }
+
+  .photo__author--best {
+    padding-left: 138px;
+  }
+
+  .photo__after {
+    margin-top: 7px;
   }
 }

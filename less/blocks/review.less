@@ -1,3 +1,7 @@
+.review__wrapper {
+  margin: -5px 20px 10px;
+}
+
 .review__list {
   margin: 0;
   padding: 0;
@@ -5,6 +9,7 @@
 }
 
 .review__author {
+  margin-bottom: 10px;
   text-align: center;
   font-weight: 700;
   font-size: 18px;
@@ -13,9 +18,115 @@
 }
 
 .review__text {
+  margin-bottom: 30px;
   text-align: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   color: @main;
+}
+
+.review__about {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .slider__item--active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review__author {
+    order: 1;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3px;
+    font-size: 20px;
+  }
+
+  .review__text {
+    margin: 0;
+    margin-top: 110px;
+    margin-bottom: 35px;
+    padding: 0;
+    font-size: 18px;
+  }
+
+  .review__about {
+    display: block;
+    order: 2;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: @main;
+  }
+
+  .review__toggles {
+    margin-top: -75px;
+    margin-bottom: -10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review__wrapper::before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 170px;
+  }
+
+  .review__text {
+    margin-top: 0;
+  }
+
+  .review__item {
+    width: 690px;
+    margin: 0 auto;
+  }
+
+  .review__author {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .review__about {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .review__list {
+    position: relative;
+  }
+
+  .review__list::before {
+    position: absolute;
+    left: 120px;
+    top: 30px;
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-left: 2px solid rgb(212, 212, 212);
+    border-bottom: 2px solid rgb(212, 212, 212);
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+
+  .review__list::after {
+    position: absolute;
+    left: 1010px;
+    top: 30px;
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-left: 2px solid rgb(212, 212, 212);
+    border-bottom: 2px solid rgb(212, 212, 212);
+    transform: rotate(225deg);
+    cursor: pointer;
+  }
 }

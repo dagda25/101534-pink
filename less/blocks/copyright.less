@@ -1,12 +1,33 @@
 .copyright {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .copyright__text {
+  margin-right: 10px;
   text-align: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: @main;
+}
+
+.copyright__link {
+  margin-top: 5px;
+}
+
+.copyright__link:hover path,
+.copyright__link:focus path {
+  fill: @main;
+}
+
+.copyright__link:active path {
+  fill: rgb(190, 194, 199);
+}
+
+@media (min-width: @desktop-width) {
+  .copyright__text {
+    font-size: 18px;
+  }
 }

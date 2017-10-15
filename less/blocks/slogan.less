@@ -1,13 +1,60 @@
 .slogan {
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
+  position: relative;
+  z-index: 0;
+  top: -66px;
+  height: 237px;
+  margin-bottom: -66px;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 25%;
   background-color: @main;
 }
 
 .slogan__title {
   margin: 0 20px;
+  padding-top: 96px;
   text-align: center;
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
+}
+
+.slogan__title br {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .slogan {
+    top: -111px;
+    height: 441px;
+    margin-bottom: -111px;
+  }
+
+  .slogan__title {
+    margin: 0 20px;
+    padding-top: 181px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 60px;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slogan {
+    top: -111px;
+    height: 396px;
+    margin-bottom: -111px;
+    background-size: cover;
+  }
+
+  .slogan__title {
+    padding-top: 175px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .slogan__title br {
+    display: block;
+  }
 }
