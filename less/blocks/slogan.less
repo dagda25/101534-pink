@@ -6,6 +6,11 @@
   margin-bottom: -66px;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 25%;
   background-color: @main;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat 50% 0%;
+    background-size: 660px auto;
+  }
 }
 
 .slogan__title {
@@ -27,6 +32,13 @@
     top: -111px;
     height: 441px;
     margin-bottom: -111px;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 25%;
+    background-color: @main;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/bg-back-tablet@2x.jpg") no-repeat top;
+      background-size: 1200px auto;
+    }
   }
 
   .slogan__title {
@@ -45,7 +57,13 @@
     top: -111px;
     height: 396px;
     margin-bottom: -111px;
-    background-size: cover;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat top;
+    background-color: @main;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/bg-back-desktop@2x.jpg") no-repeat top;
+      background-size: 2400px auto;
+    }
   }
 
   .slogan__title {

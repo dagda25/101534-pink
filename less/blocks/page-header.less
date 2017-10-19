@@ -25,7 +25,8 @@
   z-index: 1;
 }
 
-.page-header__logo svg {
+.page-header__logo-desktop,
+.page-header__logo-tablet {
   display: none;
 }
 
@@ -39,7 +40,7 @@
     padding-bottom: 41px;
   }
 
-  .page-header__logo svg {
+  .page-header__logo-tablet {
     display: block;
   }
 
@@ -50,11 +51,23 @@
   .page-header__logo[href]:hover path {
     fill: #d22856;
   }
+
+  .page-header__logo[href]:active path {
+    fill: rgb(92, 102, 112);
+  }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
     width: @desktop-width;
+  }
+
+  .page-header__logo-tablet {
+    display: none;
+  }
+
+  .page-header__logo-desktop {
+    display: block;
   }
 
   .page-header__inner {
