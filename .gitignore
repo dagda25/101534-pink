@@ -11,3 +11,4 @@ npm-debug.*
 Thumbs.db
 dagda.pub
 dagda
+build/
