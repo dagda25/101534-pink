@@ -63,7 +63,8 @@
   color: @main;
 }
 
-.forms__checkbox-label::before {
+.forms__checkbox-label::before,
+.forms__checkbox-label:disabled::before {
   position: absolute;
   left: 20px;
   top: -3px;
@@ -140,7 +141,8 @@
   color: @main;
 }
 
-.forms__radio-label::before {
+.forms__radio-label::before,
+.forms__radio-label:disabled::before {
   position: absolute;
   left: 20px;
   top: -3px;
