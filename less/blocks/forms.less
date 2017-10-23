@@ -27,6 +27,7 @@
 
 .forms__checkbox-area {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   padding-top: 70px;
   margin: -20px -20px 28px;
@@ -62,7 +63,8 @@
   color: @main;
 }
 
-.forms__checkbox-label::before {
+.forms__checkbox-label::before,
+.forms__checkbox-label:disabled::before {
   position: absolute;
   left: 20px;
   top: -3px;
@@ -101,6 +103,7 @@
 
 .forms__radio-area {
   display: flex;
+  flex-wrap: wrap;
   margin: 5px -20px 34px;
   padding: 0;
   padding-top: 107px;
@@ -128,6 +131,8 @@
 
 .forms__radio-label {
   position: relative;
+  display: block;
+  width: 320px;
   margin-bottom: 45px;
   padding-left: 90px;
   text-align: left;
@@ -137,7 +142,8 @@
   color: @main;
 }
 
-.forms__radio-label::before {
+.forms__radio-label::before,
+.forms__radio-label:disabled::before {
   position: absolute;
   left: 20px;
   top: -3px;
@@ -279,6 +285,17 @@
 .forms__contact-legend {
   display: none;
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .forms__radio-legend {
+    top: -70px;
+  }
+
+  .forms__checkbox-legend {
+    top: -60px;
+  }
+}
+
 
 @media (min-width: @tablet-width) {
   .forms__slogan {

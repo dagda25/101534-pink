@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -158,13 +159,15 @@
                 <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                 <p class="review__about">25 лет, водитель трамвая</p>
               </li>
-              <li class="review__item slider__item">
+              <li class="review__item slider__item slider__item--hidden">
                 <p class="review__author"></p>
                 <p class="review__text"></p>
+                <p class="review__about"></p>
               </li>
-              <li class="review__item slider__item">
+              <li class="review__item slider__item slider__item--hidden">
                 <p class="review__author"></p>
                 <p class="review__text"></p>
+                <p class="review__about"></p>
               </li>
             </ul>
             <p class="review__toggles slider__toggles">
@@ -218,7 +221,9 @@
             </p>
           </div>
         </section>
-        <section class="contact">
+      </div>
+      <section class="contact">
+        <div class="contact__inner">
           <h2 class="contact__title">Остались вопросы?<br> Свяжитесь с нами!</h2>
           <div class="contact__block">
             <p class="contact__text">Звоните:</p>
@@ -232,10 +237,12 @@
             <p class="contact__text">Приезжайте в гости:</p>
             <p class="contact__address">ул. Большая Конюшенная, 19/8</p>
           </div>
-          <div class="contact__map">
-          </div>
-        </section>
-      </div>
+        </div>
+        <div class="contact__map">
+          <iframe class="contact__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651638!2d30.320894615787417!3d59.93879418187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1508576451681" width="800" height="600" frameborder="0" style="border:0" allowfullscreen>
+          </iframe>
+        </div>
+      </section>
     </main>
     <footer class="page-footer page-footer--index">
       <div class="page-footer__inner">
