@@ -286,17 +286,6 @@
   display: none;
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .forms__radio-legend {
-    top: -70px;
-  }
-
-  .forms__checkbox-legend {
-    top: -60px;
-  }
-}
-
-
 @media (min-width: @tablet-width) {
   .forms__slogan {
     font-size: 18px;
@@ -599,5 +588,15 @@
 
   .forms__button-area {
     margin-bottom: -30px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .forms__radio-legend {
+    top: -70px;
+  }
+
+  .forms__checkbox-legend {
+    top: -60px;
   }
 }
