@@ -10,12 +10,28 @@
 
 .photo__list {
   margin: 0;
+  margin-bottom: -35px;
   padding: 0;
   list-style: none;
 }
 
 .photo__item {
-  margin-bottom: 30px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+.photo__item::after {
+  position: absolute;
+  z-index: 0;
+  top: 180px;
+  left: 20px;
+  left: 0;
+  content: " ";
+  width: 280px;
+  height: 143px;
+  background-color: rgb(242, 242, 242);
 }
 
 .photo__item--best {
@@ -34,6 +50,12 @@
     color: #ffffff;
     background-color: #d22856;
   }
+
+  &::after {
+    top: 137px;
+    left: 20px;
+    height: 193px;
+  }
 }
 
 .photo__image {
@@ -41,6 +63,8 @@
 }
 
 .photo__author {
+  position: relative;
+  z-index: 1;
   margin: 0;
   padding-left: 20px;
   text-align: left;
@@ -64,6 +88,9 @@
 }
 
 .photo__text {
+  position: relative;
+  z-index: 1;
+  min-width: 200px;
   margin: 0;
   margin-bottom: 10px;
   padding: 0 20px;
@@ -80,6 +107,7 @@
 
 .photo__like {
   position: relative;
+  z-index: 1;
   margin: 0;
   margin-left: 50px;
   margin-bottom: 39px;
@@ -123,11 +151,13 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 30px;
   }
 
   .photo__item {
     position: relative;
     width: 300px;
+    margin-bottom: 30px;
   }
 
   .photo__image {
@@ -136,15 +166,11 @@
   }
 
   .photo__author {
-    position: relative;
-    z-index: 1;
     margin-top: 8px;
     margin-left: 8px;
   }
 
   .photo__text {
-    position: relative;
-    z-index: 1;
     margin-left: 8px;
     min-height: 48px;
   }

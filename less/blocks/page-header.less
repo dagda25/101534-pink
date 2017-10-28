@@ -30,6 +30,22 @@
   display: none;
 }
 
+.page-header__toggle {
+  z-index: 1;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.page-header__toggle:hover path {
+  fill: #d22856;
+}
+
+.page-header__toggle:active path {
+  fill: rgba(210, 40, 86, 0.3);
+}
+
 @media (min-width: @tablet-width) {
   .page-header {
     width: @tablet-width;
@@ -55,6 +71,12 @@
   .page-header__logo[href]:active path {
     fill: rgb(92, 102, 112);
   }
+
+  .page-header__toggle {
+    position: relative;
+    top: 8px;
+    left: 7px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -78,5 +100,25 @@
   .page-header__top {
     width: auto;
     margin: 0;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 959px) {
+  .page-header__burger--on,
+  .page-header__cross--on {
+    display: block;
+  }
+
+  .page-header__burger--off,
+  .page-header__cross--off {
+    display: none;
+  }
+
+  .main-nav--nojs ~ .page-header__top .page-header__toggle {
+    display: none;
   }
 }

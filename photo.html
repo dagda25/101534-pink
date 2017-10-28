@@ -53,8 +53,8 @@
             </svg>
           </a>
           <span class="visually-hidden">Главное меню</span>
-          <button class="main-nav__toggle" type="button">
-            <svg class="main-nav__burger main-nav__burger--on" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+          <button class="page-header__toggle" type="button">
+            <svg class="page-header__burger page-header__burger--on" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
               <g id="miu">
                 <g id="editor_list_view_hambuger_menu_glyph">
                   <g>
@@ -66,7 +66,7 @@
                 </g>
               </g>
             </svg>
-            <svg version="1.0" class="main-nav__cross main-nav__cross--off" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+            <svg version="1.0" class="page-header__cross page-header__cross--off" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
               <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
             </svg>
           </button>
@@ -353,9 +353,9 @@
     </footer>
     <script>
       var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-      var navBurger = document.querySelector('.main-nav__burger');
-      var navCross = document.querySelector('.main-nav__cross');
+      var navToggle = document.querySelector('.page-header__toggle');
+      var navBurger = document.querySelector('.page-header__burger');
+      var navCross = document.querySelector('.page-header__cross');
 
       navMain.classList.remove('main-nav--nojs');
 
@@ -367,19 +367,19 @@
         navMain.classList.add('main-nav--closed');
         navMain.classList.remove('main-nav--opened');
       }
-      if (navBurger.classList.contains('main-nav__burger--off')) {
-        navBurger.classList.remove('main-nav__burger--off');
-        navBurger.classList.add('main-nav__burger--on');
+      if (navBurger.classList.contains('page-header__burger--off')) {
+        navBurger.classList.remove('page-header__burger--off');
+        navBurger.classList.add('page-header__burger--on');
       } else {
-        navBurger.classList.add('main-nav__burger--off');
-        navBurger.classList.remove('main-nav__burger--on');
+        navBurger.classList.add('page-header__burger--off');
+        navBurger.classList.remove('page-header__burger--on');
       }
-      if (navCross.classList.contains('main-nav__cross--off')) {
-        navCross.classList.remove('main-nav__cross--off');
-        navCross.classList.add('main-nav__cross--on');
+      if (navCross.classList.contains('page-header__cross--off')) {
+        navCross.classList.remove('page-header__cross--off');
+        navCross.classList.add('page-header__cross--on');
       } else {
-        navCross.classList.add('main-nav__cross--off');
-        navCross.classList.remove('main-nav__cross--on');
+        navCross.classList.add('page-header__cross--off');
+        navCross.classList.remove('page-header__cross--on');
       }
       });
     </script>
