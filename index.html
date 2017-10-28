@@ -335,6 +335,7 @@
       var navToggle = document.querySelector('.page-header__toggle');
       var navBurger = document.querySelector('.page-header__burger');
       var navCross = document.querySelector('.page-header__cross');
+      var headerTop = document.querySelector('.page-header__top');
 
       navMain.classList.remove('main-nav--nojs');
 
@@ -342,9 +343,11 @@
       if (navMain.classList.contains('main-nav--closed')) {
         navMain.classList.remove('main-nav--closed');
         navMain.classList.add('main-nav--opened');
+        headerTop.classList.add('page-header__top--opened');
       } else {
         navMain.classList.add('main-nav--closed');
         navMain.classList.remove('main-nav--opened');
+        headerTop.classList.remove('page-header__top--opened');
       }
       if (navBurger.classList.contains('page-header__burger--off')) {
         navBurger.classList.remove('page-header__burger--off');
