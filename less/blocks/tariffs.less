@@ -328,12 +328,17 @@
   }
 
   .tariffs__wrapper {
-    width: @desktop-width;
+    width: 100%;
     padding-bottom: 25px;
   }
 
+  .tariffs__wrapper::before {
+    background-size: cover;
+  }
+
   .tariffs__list {
-    margin: 0 130px;
+    width: 940px;
+    margin: 0 auto;
     padding-top: 155px;
   }
 
@@ -372,7 +377,8 @@
 
   .tariffs__labels {
     top: 235px;
-    left: 155px;
+    left: 50%;
+    margin-left: -445px;
   }
 
   .tariffs__labels::before {

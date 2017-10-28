@@ -81,7 +81,7 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    width: @desktop-width;
+    width: 100%;
   }
 
   .page-header__logo-tablet {
@@ -94,7 +94,9 @@
 
   .page-header__inner {
     flex-wrap: nowrap;
-    margin: 0 130px;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
   }
 
   .page-header__top {

@@ -239,12 +239,14 @@
 
   .advantages__image-second {
     top: -25px;
-    left: 134px;
+    left: 50%;
+    margin-left: -460px;
   }
 
   .advantages__image-third {
     top: -25px;
-    left: 457px;
+    left: 50%;
+    margin-left: -146px;
   }
 
   .advantages__slogan {
@@ -258,8 +260,10 @@
   }
 
   .advantages__inner::before {
+    width: 100%;
     height: 90px;
     top: -20px;
+    background-size: cover;
   }
 
   .advantages__inner::after {
@@ -286,14 +290,18 @@
   }
 
   .advantages__research {
+    width: 100%;
     min-height: 450px;
+    margin: 0 auto;
     padding-top: 0;
     background-color: #f2f2f2;
   }
 
   .advantages__research-slogan {
-    width: auto;
-    padding-left: 165px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 145px;
     padding-top: 120px;
     padding-bottom: 10px;
   }
@@ -304,32 +312,40 @@
 
   .advantages__research-text {
     width: 680px;
-    padding-left: 165px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 235px;
     padding-bottom: 20px;
     font-size: 18px;
     line-height: 30px;
   }
 
   .advantages__research-link {
-    padding-left: 165px;
+    display: block;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 145px;
     font-size: 18px;
     line-height: 30px;
   }
 
   .advantages__research::before {
     content: " ";
-    left: 130px;
+    left: 50%;
     top: 27px;
     width: 330px;
     height: 350px;
+    margin-left: -472px;
     background: url("../img/icon-timer.svg") no-repeat;
   }
 
   .advantages__research::after {
-    left: 152px;
+    left: 50%;
     top: 95px;
     width: 257px;
     height: 257px;
+    margin-left: -450px;
     font-weight: 700;
     font-size: 120px;
     line-height: 186px;
