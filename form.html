@@ -254,8 +254,18 @@
       <h2 class="modal__title">Ваша заявка отправлена</h2>
       <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
 оповестим вас.</p>
-      <button class="modal__button">Закрыть окно</button>
+      <div class="modal__button-area">
+        <button class="modal__button">Закрыть окно</button>
+      </div>
     </section>
+    <section class="modal modal--failure">
+      <h2 class="modal__title">Что-то пошло не так!</h2>
+      <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <div class="modal__button-area">
+        <button class="modal__button">ОК</button>
+      </div>
+    </section>
+    <script>
     <script>
       var navMain = document.querySelector('.main-nav');
       var navToggle = document.querySelector('.main-nav__toggle');
